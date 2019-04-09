@@ -1,5 +1,12 @@
 # redux-serviceworker
 
+---------------
+
+### Credits
+
+Credit to https://github.com/giantmachines/redux-websocket for the base structure of this fork. 
+
+---------------
 ## Summary
 
 A Redux middleware for managing serviceWorker related stuff.

@@ -1,6 +1,6 @@
 {
   "name": "@joelgullander/redux-serviceworker",
-  "version": "1.0.0-alpha.2",
+  "version": "0.0.1",
   "description": "A redux middleware to handle serviceworker actions",
   "main": "dist/bundle.js",
   "types": "dist/types/index.d.ts",

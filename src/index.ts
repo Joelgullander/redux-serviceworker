@@ -20,7 +20,7 @@ const defOpts = {
 /**
  * Create a middleware.
  *
- * @param {Name} name
+ * @param {Options} opts
  *
  * @returns {Middleware}
  */
@@ -44,8 +44,7 @@ const createMiddleware = ( opts?: Options): Middleware => {
     const { type: actionType } = action;
 
     // Check if action type matches prefix
-    //     if (actionType && actionType.match(actionPrefixExp)) {
-    if (actionType){
+    if (actionType && actionType.match(actionPrefixExp)) {
       const baseActionType = action.type.replace(actionPrefixExp, '');
       const handler = Reflect.get(handlers, baseActionType);
 
